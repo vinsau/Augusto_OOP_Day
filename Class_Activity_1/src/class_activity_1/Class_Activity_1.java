@@ -1,5 +1,5 @@
 
-package java_oop;
+package class_activity_1;
 
 import java.util.Scanner;
 
