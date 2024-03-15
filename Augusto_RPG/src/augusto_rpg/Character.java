@@ -3,11 +3,8 @@ package augusto_rpg;
 public class Character {
 
     private int health;
-    private int damage;
-    private int shield;
-
-    public Character() {
-    }
+    private final int damage;
+    private final int shield;
 
     public Character(int health, int damage, int shield) {
         this.health = health;
@@ -32,11 +29,15 @@ public class Character {
     }
 
     public void receiveDamage(int damage) {
+        int damageTaken = damage - shield;
 
-        health = health - (damage - shield);
-
+        if (damageTaken > 0) {
+            health -= damageTaken;
+        }
         if (health <= 0) {
             System.out.println("Character has died");
         }
     }
 }
+
+

@@ -1,13 +1,11 @@
-
-import augusto_rpg.Paladin;
-import augusto_rpg.Swordsman;
-import augusto_rpg.Character;
+package augusto_rpg;
 
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         int testCase;
 
@@ -17,6 +15,7 @@ public class Main {
         Character character = new Character(100, 20, 5);
         Swordsman swordsman = new Swordsman();
         Paladin paladin = new Paladin();
+
         switch (testCase) {
             case 1:
                 System.out.println("Testing Character Private Fields");
