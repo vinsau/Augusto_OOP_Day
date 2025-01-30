@@ -23,7 +23,7 @@ public class Main {
         System.out.print("Input your Civil Status: ");
         String civilStatus = scanner.nextLine();
 
-        System.out.print("Input the number of sibling(s) you have: ");
+        System.out.print("Input the number of sibling you have: ");
         int numberOfSiblings = scanner.nextInt();
 
         scanner.close();
